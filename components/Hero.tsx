@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Download } from "lucide-react"
@@ -22,11 +24,24 @@ export default function Hero() {
                 Get In Touch
               </a>
             </Button>
-            <Button variant="outline" asChild className="border-gray-300 dark:border-gray-600 bg-transparent">
-              <a href="#contact">
-                <Download className="w-4 h-4 mr-2" />
-                View Resume
-              </a>
+            <Button 
+              variant="outline" 
+              className="border-gray-300 dark:border-gray-600 bg-transparent"
+              onClick={() => {
+                // Download the file
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Maxwell_Jackson_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Open in new tab
+                window.open('/resume.pdf', '_blank');
+              }}
+            >
+              <Download className="w-4 h-4 mr-2" />
+              View Resume
             </Button>
           </div>
           <div className="flex gap-4 justify-center lg:justify-start">
