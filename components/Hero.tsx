@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-white dark:bg-gray-900">
+    <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="text-center lg:text-left space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">Maxwell Jackson</h1>

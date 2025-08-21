@@ -45,19 +45,19 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Experience</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800"
+              className="project-card shadow-lg bg-card border-border cursor-pointer"
             >
-              <CardHeader>
+              <CardHeader className="project-card-content">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>
-                    <CardTitle className="text-xl text-gray-900 dark:text-white">{exp.title}</CardTitle>
+                    <CardTitle className="project-title text-xl text-gray-900 dark:text-white">{exp.title}</CardTitle>
                     <p className="text-lg font-semibold text-purple-700 dark:text-purple-400">{exp.company}</p>
                   </div>
                   <div className="flex flex-col md:items-end gap-2">
@@ -73,7 +73,7 @@ export default function Experience() {
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {exp.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="outline" className="border-gray-300 dark:border-gray-600">
+                    <Badge key={techIndex} variant="outline" className="project-tech-badge border-border">
                       {tech}
                     </Badge>
                   ))}
@@ -84,7 +84,7 @@ export default function Experience() {
                       variant="outline"
                       size="sm"
                       asChild
-                      className="border-gray-300 dark:border-gray-600 bg-transparent"
+                      className="project-button border-border bg-transparent"
                     >
                       <a href={exp.demoLink} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
@@ -94,11 +94,11 @@ export default function Experience() {
                   </div>
                 )}
               </CardHeader>
-              <CardContent>
+              <CardContent className="project-card-content">
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, achIndex) => (
-                    <li key={achIndex} className="flex items-start gap-2 text-gray-600 dark:text-gray-300">
-                      <span className="text-purple-700 dark:text-purple-400 mt-1">•</span>
+                    <li key={achIndex} className="project-feature-item flex items-start gap-2 text-gray-600 dark:text-gray-300">
+                      <span className="project-feature-bullet text-purple-700 dark:text-purple-400 mt-1 transition-all duration-200">•</span>
                       <span>{achievement}</span>
                     </li>
                   ))}

@@ -47,7 +47,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 px-4 bg-white dark:bg-gray-900">
+    <section id="projects" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
@@ -56,7 +56,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="project-card h-full shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 cursor-pointer"
+              className="project-card h-full shadow-lg bg-card border-border cursor-pointer"
             >
               <CardHeader className="project-card-content">
                 <CardTitle className="project-title text-2xl text-purple-700 dark:text-purple-400 mb-3">
@@ -68,7 +68,7 @@ export default function Projects() {
                     <Badge
                       key={techIndex}
                       variant="secondary"
-                      className="project-tech-badge bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                      className="project-tech-badge bg-secondary text-secondary-foreground"
                     >
                       {tech}
                     </Badge>
@@ -94,7 +94,7 @@ export default function Projects() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="project-button bg-transparent border-gray-300 dark:border-gray-600"
+                      className="project-button bg-transparent border-border"
                       asChild
                     >
                       <a href={project.links.github} target="_blank" rel="noopener noreferrer">

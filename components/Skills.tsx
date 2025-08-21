@@ -26,24 +26,24 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-20 px-4 bg-white dark:bg-gray-900">
+    <section id="skills" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
           Skills & Expertise
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="h-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-              <CardHeader>
-                <CardTitle className="text-xl text-purple-700 dark:text-purple-400">{category.title}</CardTitle>
+            <Card key={index} className="project-card h-full bg-card border-border cursor-pointer">
+              <CardHeader className="project-card-content">
+                <CardTitle className="project-title text-xl text-purple-700 dark:text-purple-400">{category.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="project-card-content">
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <Badge
                       key={skillIndex}
                       variant="secondary"
-                      className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                      className="project-tech-badge bg-secondary text-secondary-foreground"
                     >
                       {skill}
                     </Badge>

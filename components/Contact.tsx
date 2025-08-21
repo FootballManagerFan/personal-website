@@ -4,18 +4,18 @@ import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Get In Touch</h2>
-        <Card className="shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-          <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-purple-700 dark:text-purple-400">Let's Connect</CardTitle>
+        <Card className="project-card shadow-xl bg-card border-border cursor-pointer">
+          <CardHeader className="project-card-content text-center">
+            <CardTitle className="project-title text-2xl text-purple-700 dark:text-purple-400">Let's Connect</CardTitle>
             <p className="text-gray-600 dark:text-gray-300 mt-4 leading-relaxed">
               I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just
               want to chat about technology, feel free to reach out!
             </p>
           </CardHeader>
-          <CardContent className="space-y-6">
+          <CardContent className="project-card-content space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
@@ -44,7 +44,7 @@ export default function Contact() {
               <div className="space-y-4">
                 <Button
                   variant="outline"
-                  className="w-full justify-start bg-transparent border-gray-300 dark:border-gray-600"
+                  className="project-button w-full justify-start bg-transparent border-border"
                   asChild
                 >
                   <a href="https://github.com/FootballManagerFan" target="_blank" rel="noopener noreferrer">
@@ -54,7 +54,7 @@ export default function Contact() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="w-full justify-start bg-transparent border-gray-300 dark:border-gray-600"
+                  className="project-button w-full justify-start bg-transparent border-border"
                   asChild
                 >
                   <a href="https://www.linkedin.com/in/maxwell-p-jackson/" target="_blank" rel="noopener noreferrer">
