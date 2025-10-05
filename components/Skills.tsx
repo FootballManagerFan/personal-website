@@ -4,24 +4,24 @@ import { Badge } from "@/components/ui/badge"
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      skills: ["React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+      title: "Languages & Frameworks",
+      skills: ["Python", "Java", "TypeScript", "JavaScript", "React", "Next.js", "Node.js", "Flask"],
     },
     {
-      title: "Backend Development",
-      skills: ["Node.js", "Express.js", "Python", "Java", "REST API", "Flask"],
+      title: "AI & Automation",
+      skills: ["OpenAI API", "LangChain", "ChromaDB", "Google Speech API", "Twilio", "RAG Systems", "Vector Databases"],
     },
     {
-      title: "AI & Machine Learning",
-      skills: ["OpenAI API", "Google AI Studio", "Stable Diffusion", "LoRA", "Twilio", "Bland.AI", "Retell.AI"],
+      title: "Backend & Databases",
+      skills: ["RESTful API", "Supabase", "SQL", "Express", "FastAPI", "Docker"],
     },
     {
-      title: "Tools & Technologies",
-      skills: ["GitHub", "Figma", "Supabase", "Cursor", "LaTeX", "Excel"],
+      title: "Tools & Design",
+      skills: ["Git", "Vercel", "Figma", "Stable Diffusion", "LaTeX", "Tailwind CSS"],
     },
     {
       title: "Organizations & Achievements",
-      skills: ["Wells Fargo Forage", "ACM", "ColorStack", "CodePath", "USCF", "NCAT Crypto Club"],
+      skills: ["ACM", "ColorStack", "CodePath", "USCF", "Greensboro Chess Club", "NCAT Crypto Club", "Wells Fargo SWE Simulation"],
     },
   ]
 

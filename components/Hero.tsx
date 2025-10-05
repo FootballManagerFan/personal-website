@@ -11,11 +11,11 @@ export default function Hero() {
         <div className="text-center lg:text-left space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">Maxwell Jackson</h1>
           <h2 className="text-xl md:text-2xl text-purple-700 dark:text-purple-400 font-semibold">
-            Software Engineer & Full-Stack Developer
+            AI/Automation Engineer & Full-Stack Developer
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
-            Computer Science student at NC A&T with expertise in React, Next.js, and AI integration. Passionate about
-            creating innovative solutions and building engaging user experiences.
+            Computer Science student at NC A&T specializing in AI-powered automation and full-stack development. 
+            Passionate about building intelligent systems that streamline workflows and enhance user experiences.
           </p>
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <Button asChild className="bg-purple-700 hover:bg-purple-800 text-white">

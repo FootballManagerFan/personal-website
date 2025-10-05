@@ -8,13 +8,26 @@ export default function Projects() {
     {
       title: "Prep.AI",
       description:
-        "A real-time AI-powered mock interview system enabling natural voice conversations with intelligent response generation.",
-      technologies: ["Node.js", "Express.js", "Google Speech API", "Web Audio API", "OpenAI API"],
+        "Real-time AI interview simulator supporting natural voice conversations with contextual follow-ups and IDE integration for live code compilation.",
+      technologies: ["Node.js", "Express", "Google Speech API", "OpenAI API", "FastAPI", "Docker"],
       features: [
-        "Advanced Voice Activity Detection (VAD) using Web Audio API with RMS volume calculation",
-        "Google Cloud Speech-to-Text API integration for accurate transcription",
-        "OpenAI GPT-3.5-turbo for contextual interview questions",
-        "Responsive front-end with real-time audio processing and silence detection",
+        "Built real-time AI interview simulator supporting natural voice conversations with contextual follow-ups",
+        "Implemented Voice Activity Detection and PDF parsing to add resume upload and microphone features",
+        "Added custom questions and topics with IDE integration, hosted on Docker to compile code live. Languages include Python, Java, JavaScript, and C++",
+        "Combined Google Speech-to-Text with GPT-3.5 for accurate, low-cost interview prompts",
+      ],
+      links: {},
+    },
+    {
+      title: "MotivateAI",
+      description:
+        "Entrepreneur Biography RAG System using semantic search to process entrepreneur biographies with intelligent retrieval and synthesis.",
+      technologies: ["Python", "LangChain", "ChromaDB", "OpenAI API", "Vector Embeddings"],
+      features: [
+        "Engineered semantic search system processing 6+ entrepreneur biographies using OpenAI embeddings and ChromaDB vector database",
+        "Added custom metadata, post-retrieval prompts, and auto-chunking to support better filtered queries",
+        "Used LangChain to calculate embedding distance between vectors, focusing on cosine similarity",
+        "Built interface to configure retrieval parameters and request prompts for multi-source synthesis, deployed with query logging and source attribution",
       ],
       links: {},
     },

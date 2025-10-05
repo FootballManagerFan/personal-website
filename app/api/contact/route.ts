@@ -78,12 +78,14 @@ Reply directly to this email to respond to ${name}.
     console.error('Error response:', error.response?.body)
     
     // Return more specific error information
-    const errorMessage = error.response?.body?.errors?.[0]?.message || 'Failed to send email'
+    const errorMessage = error.response?.body?.errors?.[0]?.message || error.message || 'Failed to send email'
+    const errorField = error.response?.body?.errors?.[0]?.field
     
     return NextResponse.json(
       { 
         error: errorMessage,
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        field: errorField,
+        details: error.response?.body || error.message
       },
       { status: 500 }
     )
